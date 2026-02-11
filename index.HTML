@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Student's Guide to Mass Media Studies & Careers</title>
+    <style>
+        /* --- General Styling --- */
+        :root {
+            --primary-color: #005A9C;
+            --secondary-color: #00A3E0;
+            --accent-color: #FF6B35;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+            --card-bg: #ffffff;
+            --border-color: #ddd;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* --- New Styles for Header Logo and Credit --- */
+        .header-logo {
+            max-height: 100px;
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .header-credit {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 15px;
+        }
+
+        nav {
+            background-color: var(--card-bg);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            display: block;
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        /* --- Main Content Sections --- */
+        main section {
+            background-color: var(--card-bg);
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* --- Specialization Grid --- */
+        .specialization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .specialization-card {
+            background-color: #f9f9f9;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .specialization-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .specialization-card h3 {
+            margin-top: 0;
+        }
+
+        /* --- Tables --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        thead th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        caption {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: var(--text-color);
+        }
+
+        tfoot {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            nav ul li a {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            .container {
+                padding: 10px;
+            }
+            main section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <!-- MODIFICATION: Added Logo and Credit Line -->
+            <img src="https://z-cdn-media.chatglm.cn/files/e2b5e802-57d7-4ec9-82f2-16e4bae1b2ed.jpeg?auth_key=1870463599-3564ed705bfc430a890e7cfb297f06e4-0-da989677cc1b25687f4ebfe2347ea0ff" alt="Taryam American Private School Logo" class="header-logo">
+            <h1>A Student's Guide to Mass Media</h1>
+            <p>Exploring Studies, Specializations, and Careers in Mass Communication</p>
+            <p class="header-credit">Done: By Mass communication team<br>Taryam American School</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#info">About Mass Media</a></li>
+            <li><a href="#requirements">Study Requirements</a></li>
+            <li><a href="#local-unis">Local Universities</a></li>
+            <li><a href="#top-unis">Top 5 Global Universities</a></li>
+            <li><a href="#rankings">Global Rankings</a></li>
+            <li><a href="#specializations">Specializations</a></li>
+            <li><a href="#jobs">Careers After Graduation</a></li>
+            <li><a href="#salaries">Salary Guide</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        
+        <section id="info">
+            <h2>1. Required Information about Mass Media</h2>
+            <p>Mass Media refers to the diverse channels of communication that reach a large audience simultaneously. It plays a crucial role in shaping public opinion, disseminating information, and providing entertainment.</p>
+            <h3>Key Types of Mass Media:</h3>
+            <ul>
+                <li><strong>Print Media:</strong> Newspapers, magazines, books, and journals.</li>
+                <li><strong>Broadcast Media:</strong> Television and radio, which transmit information electronically.</li>
+                <li><strong>Digital Media:</strong> The internet, social media, websites, blogs, podcasts, and streaming services.</li>
+                <li><strong>Outdoor Media:</strong> Billboards, signs, and transit advertisements.</li>
+            </ul>
+        </section>
+
+        <section id="requirements">
+            <h2>2. Study Requirements in Universities (Inside & Outside the Country)</h2>
+            <p>Admission requirements for a Mass Media or Communication degree can vary, but generally include:</p>
+            <ul>
+                <li><strong>Academic Qualifications:</strong> A high school diploma with a good academic record. Some programs may require specific grades in subjects like English, Social Studies, or Literature.</li>
+                <li><strong>Language Proficiency:</strong> For programs taught in English, proof of proficiency is required (e.g., TOEFL or IELTS scores). For Arabic programs, proficiency in Arabic is essential.</li>
+                <li><strong>Portfolio (Sometimes):</strong> For more creative specializations like Film or Journalism, a portfolio showcasing your work (e.g., articles, short videos, photos) can be a significant advantage.</li>
+                <li><strong>Personal Statement or Essay:</strong> A written statement explaining your interest in media, your career goals, and why you are a good candidate for the program.</li>
+                <li><strong>Interview (Sometimes):</strong> Some universities may conduct an interview to assess your communication skills and motivation.</li>
+            </ul>
+        </section>
+
+        <section id="local-unis">
+            <h2>3. Names of Specialized Universities & Academies in Mass Media (Inside the Country)</h2>
+            <p><em>Note: "Inside the country" is a general term. Below are examples of highly-regarded universities in the Arab world known for their Media programs.</em></p>
+            <ul>
+                <li><strong>The American University in Cairo (AUC), Egypt:</strong> Offers a renowned Journalism and Mass Communication program.</li>
+                <li><strong>American University of Sharjah (AUS), UAE:</strong> Known for its strong Department of Mass Communication.</li>
+                <li><strong>King Saud University (KSU), Saudi Arabia:</strong> Provides a well-established program in Media and Communication.</li>
+                <li><strong>Lebanese American University (LAU), Lebanon:</strong> Offers a comprehensive Communication Arts program.</li>
+                <li><strong>Qatar University (QU), Qatar:</strong> Features a College of Communication and a strong research focus.</li>
+            </ul>
+        </section>
+
+        <section id="top-unis">
+            <h2>4. Top 5 Global Universities for Media (Based on World Rankings)</h2>
+            <p><em>Source: Based on QS World University Rankings by Subject 2023 for Communication & Media Studies.</em></p>
+            <ol>
+                <li><strong>University of Amsterdam, Netherlands:</strong> Globally recognized for its strong research and comprehensive programs in communication science.</li>
+                <li><strong>University of Southern California (USC), USA:</strong> Home to the prestigious Annenberg School for Communication and Journalism, with deep industry ties in Los Angeles.</li>
+                <li><strong>London School of Economics and Political Science (LSE), UK:</strong> Offers a unique approach focusing on media's role in society, politics, and economics.</li>
+                <li><strong>The University of Texas at Austin, USA:</strong> The Moody College of Communication is a leader in advertising, public relations, and film production.</li>
+                <li><strong>Stanford University, USA:</strong> Its Department of Communication is known for cutting-edge research in digital media and human-computer interaction.</li>
+            </ol>
+        </section>
+
+        <section id="rankings">
+            <h2>5. World Ranking Summary for Media Specialization</h2>
+            <p>This table provides a comparative look at the rankings of some local and international universities.</p>
+            <table>
+                <caption>University Rankings in Communication & Media Studies (Approximate)</caption>
+                <thead>
+                    <tr>
+                        <th>University Name</th>
+                        <th>Location</th>
+                        <th>Approx. World Rank</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>University of Amsterdam</td>
+                        <td>Netherlands</td>
+                        <td>#1</td>
+                        <td>Top global leader in the field.</td>
+                    </tr>
+                    <tr>
+                        <td>University of Southern California</td>
+                        <td>USA</td>
+                        <td>#2</td>
+                        <td>Excellent industry connections.</td>
+                    </tr>
+                    <tr>
+                        <td>The American University in Cairo</td>
+                        <td>Egypt</td>
+                        <td>Top 150-200</td>
+                        <td>Leading program in the MENA region.</td>
+                    </tr>
+                    <tr>
+                        <td>American University of Sharjah</td>
+                        <td>UAE</td>
+                        <td>Top 250-300</td>
+                        <td>Highly respected in the Gulf region.</td>
+                    </tr>
+                    <tr>
+                        <td>King Saud University</td>
+                        <td>Saudi Arabia</td>
+                        <td>Top 350-400</td>
+                        <td>Major public university in KSA.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">*Ranks are approximate and can change annually. Always check the latest ranking reports.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="specializations">
+            <h2>6. Different Specializations in Mass Media</h2>
+            <p>A degree in Mass Media opens doors to various exciting fields. Here are some of the most popular specializations:</p>
+            <div class="specialization-grid">
+                <div class="specialization-card">
+                    <h3>📰 Journalism (Print & Digital)</h3>
+                    <p>Focusing on reporting, writing, and editing news for newspapers, magazines, and online news platforms.</p>
+                </div>
+                <div class="specialization-card">
+                    <h3>📺 Broadcasting (TV & Radio)</h3>
+                    <p>Covers TV and radio production, including on-air presenting, directing, and scriptwriting for broadcast media.</p>
+                </div>
+                <div class="specialization-card">
+                    <h3>💻 Digital Media & Social Media</h3>
+                    <p>Centers on creating content for websites, social media, podcasts, and understanding digital audience engagement.</p>
+                </div>
+                <div class="specialization-card">
+                    <h3>📢 Public Relations (PR)</h3>
+                    <p>Managing the public image of organizations, handling media relations, and strategic communication campaigns.</p>
+                </div>
+                <div class="specialization-card">
+                    <h3>📢 Advertising</h3>
+                    <p>The art of creating persuasive campaigns to promote products or services through various media channels.</p>
+                </div>
+                <div class="specialization-card">
+                    <h3>🎬 Film & Video Production</h3>
+                    <p>Teaches the technical and creative skills needed to produce films, documentaries, and corporate videos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="jobs">
+            <h2>7. Jobs After Graduation in Mass Media</h2>
+            <p>A Mass Media degree prepares you for a dynamic range of careers. Job titles include:</p>
+            <ul>
+                <li><strong>Content Creator / YouTuber / Podcaster</strong></li>
+                <li><strong>Journalist / Reporter / Correspondent</strong></li>
+                <li><strong>Social Media Manager</strong></li>
+                <li><strong>Public Relations (PR) Specialist</strong></li>
+                <li><strong>TV / Radio Producer or Presenter</strong></li>
+                <li><strong>Copywriter / Content Strategist</strong></li>
+                <li><strong>Advertising Executive</strong></li>
+                <li><strong>Film Director / Editor / Cinematographer</strong></li>
+                <li><strong>Brand Manager</strong></li>
+                <li><strong>Media Planner / Buyer</strong></li>
+            </ul>
+        </section>
+
+        <section id="salaries">
+            <h2>8. Salary Guide for Media Jobs</h2>
+            <p><strong>Important Disclaimer:</strong> The following figures are <strong>estimated annual ranges in USD</strong> for illustrative purposes only. Actual salaries depend heavily on the country, city, company, experience, and skill level.</p>
+            <table>
+                <caption>Estimated Annual Salary Ranges (USD)</caption>
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Experience Level</th>
+                        <th>Local (e.g., GCC/MENA)</th>
+                        <th>International (e.g., USA/UK)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Journalist / Content Creator</td>
+                        <td>Entry Level (0-2 yrs)</td>
+                        <td>$20,000 - $35,000</td>
+                        <td>$40,000 - $55,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mid-Level (3-7 yrs)</td>
+                        <td>$35,000 - $60,000</td>
+                        <td>$55,000 - $80,000</td>
+                    </tr>
+                    <tr>
+                        <td>Senior (8+ yrs)</td>
+                        <td>$60,000 - $90,000+</td>
+                        <td>$80,000 - $120,000+</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">PR Specialist</td>
+                        <td>Entry Level (0-2 yrs)</td>
+                        <td>$25,000 - $40,000</td>
+                        <td>$45,000 - $60,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mid-Level (3-7 yrs)</td>
+                        <td>$40,000 - $70,000</td>
+                        <td>$60,000 - $90,000</td>
+                    </tr>
+                    <tr>
+                        <td>Senior (8+ yrs)</td>
+                        <td>$70,000 - $110,000+</td>
+                        <td>$90,000 - $150,000+</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Social Media Manager</td>
+                        <td>Entry Level (0-2 yrs)</td>
+                        <td>$22,000 - $38,000</td>
+                        <td>$48,000 - $65,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mid-Level (3-7 yrs)</td>
+                        <td>$38,000 - $65,000</td>
+                        <td>$65,000 - $95,000</td>
+                    </tr>
+                    <tr>
+                        <td>Senior (8+ yrs)</td>
+                        <td>$65,000 - $100,000+</td>
+                        <td>$95,000 - $140,000+</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">*Salaries in major media hubs like New York, London, or Dubai will be at the higher end of these ranges.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student Project. This page was created for educational purposes.</p>
+    </footer>
+
+</body>
+</html>
